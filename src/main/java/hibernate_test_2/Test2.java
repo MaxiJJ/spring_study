@@ -17,6 +17,8 @@ public class Test2 {
 
         Session session = null;
            try {
+
+
             session = factory.getCurrentSession();
             Employee employee = new Employee("Aleksei", "Kryglob", "Kitchen", 300);
 
