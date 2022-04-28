@@ -1,6 +1,8 @@
 package hibernate_test;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import hibernate_test.entity.Employee;
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -15,7 +17,7 @@ public class Test1 {
 
         try {
             Session session = factory.getCurrentSession();
-            Employee emp = new Employee("Yuliya", "Kuznetcova", "Sales", 800);
+            Employee emp = new Employee("Maxim", "Grigorev", "Sales", 800);
             session.beginTransaction();
             session.save(emp);
             session.getTransaction().commit();

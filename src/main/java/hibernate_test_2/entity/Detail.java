@@ -61,6 +61,7 @@ public class Detail {
         this.email = email;
     }
 
+
     @Override
     public String toString() {
         return "Detail{" +
