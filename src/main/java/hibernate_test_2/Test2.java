@@ -23,7 +23,8 @@ public class Test2 {
 
 
             Detail detail = new Detail("Kazan", "9876543212", "Aleksei@rrrw.ru");
-//            detail.setEmployee(employee);
+            detail.setEmployee(employee);
+//            employee.setEmpDetail(detail);
             session.beginTransaction();
 
             session.save(detail);
