@@ -1,4 +1,4 @@
-package hibernate_test_2.entity;
+package hibernate_one_to_one.entity;
 
 import javax.persistence.*;
 
@@ -23,7 +23,7 @@ public class Detail {
     public Detail() {
     }
 
-    @OneToOne(mappedBy = "empDetail", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "empDetail", cascade = {CascadeType.REFRESH, CascadeType.PERSIST})
     private Employee employee;
 
     public Employee getEmployee() {
